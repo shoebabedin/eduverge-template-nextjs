@@ -1,11 +1,11 @@
-import Nav from './Nav';
+import Nav from "./Nav";
 
 const OffCanvas = () => {
-    return (
-        <>
-            <Nav/>
-        </>
-    );
+  return (
+    <>
+      <Nav />
+    </>
+  );
 };
 
 export default OffCanvas;

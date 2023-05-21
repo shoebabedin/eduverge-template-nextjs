@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer/Footer";
 import Modal from "@/components/Modal/Index";
 import Navbar from "@/components/Navbar/Navbar";
-import OffCanvas from "@/components/OffCanvas";
+// import OffCanvas from "@/components/OffCanvas";
 import Preloader from "@/components/Preloader/Preloader";
 import ToTop from "@/components/ToTop/ToTop";
 import { useEffect, useState } from "react";
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       {children}
       <Footer />
       <ToTop/>
-      <OffCanvas/>
+      {/* <OffCanvas/> */}
       <Modal/>
     </div>
   );

@@ -1,7 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Form } from "react-bootstrap";
 
 const Nav = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target.value);
+    const token = JSON.stringify({ email: "user@gmail.com" , name: 'user'});
+    localStorage.setItem('token', token);
+    window.location.reload()
+  };
+  
+
+  
   return (
     <>
       <div
@@ -30,7 +41,7 @@ const Nav = () => {
                 </p>
               </div>
               <div className="auth-pad">
-                <form action="!?#">
+                <Form onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label">
                       Email
@@ -109,7 +120,7 @@ const Nav = () => {
                       Login
                     </button>
                   </div>
-                </form>
+                </Form>
                 <div className="mb-3 position-relative">
                   <hr />
                   <p className="or">or</p>
@@ -170,7 +181,7 @@ const Nav = () => {
                 </div>
                 <div className="mb-3 text-center forget-pass">
                   <p>
-                    Don’t have an account? <a href="!#">Create an account</a>
+                    Don’t have an account? <Link href="!#">Create an account</Link>
                   </p>
                 </div>
               </div>

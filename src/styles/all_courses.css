@@ -306,4 +306,9 @@
 }
 @media (min-width: 1200px) and (max-width: 1357px) {
 }
+@media (min-width: 320px) and (max-width: 649px) {
+  .all_courses {
+    padding-bottom: 0px;
+  }
+}
 /* responsive */

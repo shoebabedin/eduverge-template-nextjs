@@ -4,6 +4,7 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none !important;
 }
@@ -26,7 +27,7 @@ li {
   list-style-type: none;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: var(--fontFamily) !important;
 }
 .desktop {
   display: block !important;
@@ -188,7 +189,7 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  background-color: #016a78;
 }
 
 /***************************************************

@@ -60,7 +60,7 @@ const Categories = () => {
               stroke="none"
               strokeWidth="0"
               fill="#f5fbf8"
-              fill-opacity="0.4"
+              fillOpacity="0.4"
               className="transition-all duration-300 ease-in-out delay-150 path-0"
             ></path>
             {/* <style>
@@ -109,7 +109,7 @@ const Categories = () => {
               stroke="none"
               strokeWidth="0"
               fill="#f5fbf8"
-              fill-opacity="0.53"
+              fillOpacity="0.53"
               className="transition-all duration-300 ease-in-out delay-150 path-1"
             ></path>
             {/* <style>
@@ -158,7 +158,7 @@ const Categories = () => {
               stroke="none"
               strokeWidth="0"
               fill="#f5fbf8"
-              fill-opacity="1"
+              fillOpacity="1"
               className="transition-all duration-300 ease-in-out delay-150 path-2"
             ></path>
           </svg>

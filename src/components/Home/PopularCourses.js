@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const PopularCourses = () => {
-  // useEffect(() => {
-  //     mixitup(".shorting", {
-  //       selectors: {
-  //         target: ".mix-item",
-  //       },
-  //       animation: {
-  //         duration: 500
-  //       }
-  //     });
-  //   }, []);
+  const [data, setData] = useState([]);
+  const [keys, setKeys] = useState("all");
+
+  useEffect(() => {
+    fetch("/assets/Data/popularTabs.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
     <>
       <section className="popular_courses">
@@ -23,34 +23,55 @@ const PopularCourses = () => {
             </div>
             <div className="col-12">
               <div className="shorting-menu">
-                <button className="filter" data-filter="all">
+                <button
+                  className={`filter ${keys === "all" ? "active" : ""}`}
+                  data-filter="all"
+                  onClick={() => {
+                    setKeys("all");
+                  }}
+                >
                   All Projects
                 </button>
-                <button className="filter" data-filter=".design">
-                  Design & Development
-                </button>
-                <button className="filter" data-filter=".seo">
-                  SEO & Digital Marketing
-                </button>
-                <button className="filter" data-filter=".video">
-                  Video Editing
-                </button>
-                <button className="filter" data-filter=".marketing">
-                  Marketing
-                </button>
+                {data.length > 0 &&
+                  data.map((item) => (
+                    <button
+                      key={item.id}
+                      className={`filter ${
+                        keys === item.filter ? "active" : ""
+                      }`}
+                      data-filter={`.${item.filter}`}
+                      onClick={() => {
+                        setKeys(item.filter);
+                      }}
+                    >
+                      {item.btn}
+                    </button>
+                  ))}
               </div>
 
               <div className="shorting">
                 <div className="row">
-                  <div className="col-lg-4 col-md-6 mix design">
+                  <div className="col-lg-6 col-md-12 text-end">
+                    <Link
+                      href="#"
+                      className="btn border border-success-subtle text-success shorting-btn"
+                    >
+                      Explore All
+                    </Link>
+                  </div>
+                  <div
+                    className={`col-lg-4 col-md-6 mix  ${
+                      keys === "all" && "d-block"
+                    }  ${keys === "design" && "d-block"}`}
+                  >
                     <div className="mix-item">
                       <div className="img">
                         <Image
                           className="img-fluid"
                           src="/assets/images/popular-courses/img1.png"
                           alt=""
-                          width={100}
-                          height={100}
+                          width={368}
+                          height={209}
                         />
                         <div className="overlay"></div>
                       </div>
@@ -148,7 +169,7 @@ const PopularCourses = () => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href="#">
+                              <Link href="/course-categories/categories-details">
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -158,15 +179,19 @@ const PopularCourses = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 col-md-6 mix seo">
+                  <div
+                    className={`col-lg-4 col-md-6 mix  ${
+                      keys === "all" && "d-block"
+                    }  ${keys === "seo" && "d-block"}`}
+                  >
                     <div className="mix-item">
                       <div className="img">
                         <Image
                           className="img-fluid"
                           src="/assets/images/popular-courses/img2.png"
                           alt=""
-                          width={100}
-                          height={100}
+                          width={368}
+                          height={209}
                         />
                         <div className="overlay"></div>
                       </div>
@@ -264,7 +289,7 @@ const PopularCourses = () => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href="#">
+                              <Link href="/course-categories/categories-details">
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -274,15 +299,19 @@ const PopularCourses = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 col-md-6 mix video">
+                  <div
+                    className={`col-lg-4 col-md-6 mix  ${
+                      keys === "all" && "d-block"
+                    }  ${keys === "video" && "d-block"}`}
+                  >
                     <div className="mix-item">
                       <div className="img">
                         <Image
                           className="img-fluid"
                           src="/assets/images/popular-courses/img3.png"
                           alt=""
-                          width={100}
-                          height={100}
+                          width={368}
+                          height={209}
                         />
                         <div className="overlay"></div>
                       </div>
@@ -380,7 +409,7 @@ const PopularCourses = () => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href="#">
+                              <Link href="/course-categories/categories-details">
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -390,15 +419,19 @@ const PopularCourses = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 col-md-6 mix marketing">
+                  <div
+                    className={`col-lg-4 col-md-6 mix  ${
+                      keys === "all" && "d-block"
+                    }  ${keys === "marketing" && "d-block"}`}
+                  >
                     <div className="mix-item">
                       <div className="img">
                         <Image
                           className="img-fluid"
                           src="/assets/images/popular-courses/img4.png"
                           alt=""
-                          width={100}
-                          height={100}
+                          width={368}
+                          height={209}
                         />
                         <div className="overlay"></div>
                       </div>
@@ -496,7 +529,7 @@ const PopularCourses = () => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href="#">
+                              <Link href="/course-categories/categories-details">
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -505,15 +538,19 @@ const PopularCourses = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6 mix design">
+                  <div
+                    className={`col-lg-4 col-md-6 mix  ${
+                      keys === "all" && "d-block"
+                    }  ${keys === "design" && "d-block"}`}
+                  >
                     <div className="mix-item">
                       <div className="img">
                         <Image
                           className="img-fluid"
                           src="/assets/images/popular-courses/img5.png"
                           alt=""
-                          width={100}
-                          height={100}
+                          width={368}
+                          height={209}
                         />
                         <div className="overlay"></div>
                       </div>
@@ -611,7 +648,7 @@ const PopularCourses = () => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href="#">
+                              <Link href="/course-categories/categories-details">
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -621,15 +658,19 @@ const PopularCourses = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-4 col-md-6 mix seo">
+                  <div
+                    className={`col-lg-4 col-md-6 mix  ${
+                      keys === "all" && "d-block"
+                    }  ${keys === "seo" && "d-block"}`}
+                  >
                     <div className="mix-item">
                       <div className="img">
                         <Image
                           className="img-fluid"
                           src="/assets/images/popular-courses/img6.png"
                           alt=""
-                          width={100}
-                          height={100}
+                          width={368}
+                          height={209}
                         />
                         <div className="overlay"></div>
                       </div>
@@ -724,7 +765,7 @@ const PopularCourses = () => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href="#">
+                              <Link href="/course-categories/categories-details">
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>

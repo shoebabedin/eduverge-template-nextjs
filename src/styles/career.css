@@ -211,6 +211,20 @@
   }
 }
 @media (min-width: 320px) and (max-width: 649px) {
+  .career {
+    position: relative;
+    padding-bottom: 112px;
+  }
+  .career .career-btn {
+    z-index: 1042;
+    position: absolute;
+    top: auto;
+    right: 0;
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%, -2%);
+    display: block;
+  }
   .career h6 {
     font-size: 16px;
     line-height: 24px;

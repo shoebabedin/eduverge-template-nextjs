@@ -10670,7 +10670,7 @@
   justify-content: flex-end;
   border: 0;
 }
-#videoModal .modal-header button i{
+#videoModal .modal-header button i {
   color: #fff;
   font-size: 20px;
   background-color: var(--primary);
@@ -10685,18 +10685,7 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-#videoModal .modal-content {
-}
-#videoModal .modal-content {
-}
-#videoModal .modal-content {
-}
-#videoModal .modal-content {
-}
-#videoModal .modal-content {
-}
-#videoModal .modal-content {
-}
+
 /* play video popup */
 
 /* responsive */
@@ -10760,6 +10749,14 @@
   }
   .hero .hero-btn a {
     width: 100%;
+  }
+
+  .hero .hero-btn button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1357px) {

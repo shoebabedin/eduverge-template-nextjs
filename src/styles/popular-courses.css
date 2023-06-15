@@ -229,8 +229,7 @@
 }
 @media (min-width: 320px) and (max-width: 649px) {
   .popular_courses {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 40px;
   }
   .popular_courses h6 {
     font-size: 14px;
@@ -271,6 +270,25 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 0;
+  }
+  .career .mix-item {
+    padding: 8px 16px !important;
+  }
+  .career .mix-item .img {
+    top: -1rem;
+  }
+  .shorting {
+    position: relative;
+    /* padding-bottom: 112px; */
+  }
+  .shorting .shorting-btn {
+    z-index: 1042;
+    position: absolute;
+    top: auto;
+    right: 0;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -2%);
   }
 }
 @media (min-width: 1200px) and (max-width: 1357px) {

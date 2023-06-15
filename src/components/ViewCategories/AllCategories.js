@@ -1,108 +1,189 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const AllCategories = ({ item }) => {
   const route = useRouter();
+  const [screenWidth, setScreenWidth] = useState(undefined);
+
+  useEffect(() => {
+    const label = document.querySelector(".dropdown__filter-selected");
+    const options = Array.from(
+      document.querySelectorAll(".dropdown__select-option")
+    );
+
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
+        label.textContent = option.textContent;
+      });
+    });
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    const updateScreenWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    // Check if window object is available (browser environment)
+    if (typeof window !== "undefined") {
+      // Get initial screenWidth on component load
+      updateScreenWidth();
+
+      window.addEventListener("resize", handleResize);
+
+      // Cleanup function
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
+
+  console.log(screenWidth);
+
   return (
     <>
       <section className="all-course-categories">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3">
-              <div className="all-course-sidebar">
-                <form className="desktop search" role="search">
-                  <span className="search-icon">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.9167 11.6667H12.2583L12.025 11.4417C12.8417 10.4917 13.3333 9.25833 13.3333 7.91667C13.3333 4.925 10.9083 2.5 7.91667 2.5C4.925 2.5 2.5 4.925 2.5 7.91667C2.5 10.9083 4.925 13.3333 7.91667 13.3333C9.25833 13.3333 10.4917 12.8417 11.4417 12.025L11.6667 12.2583V12.9167L15.8333 17.075L17.075 15.8333L12.9167 11.6667ZM7.91667 11.6667C5.84167 11.6667 4.16667 9.99167 4.16667 7.91667C4.16667 5.84167 5.84167 4.16667 7.91667 4.16667C9.99167 4.16667 11.6667 5.84167 11.6667 7.91667C11.6667 9.99167 9.99167 11.6667 7.91667 11.6667Z"
-                        fill="#696F8C"
-                      />
-                    </svg>
-                  </span>
-                  <input
-                    className="form-control"
-                    type="search"
-                    placeholder="Search Courses..."
-                    aria-label="Search"
-                  />
-                </form>
-                <h4>Categories</h4>
-                <hr />
-                <ul>
-                  <h6>Design & Development</h6>
-                  <li className="active">
-                    <Link href="#">Graphics Design</Link>
-                  </li>
-                  <li>
-                    <Link href="#">UI/UX Design</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Web Design</Link>
-                  </li>
-                  <li>
-                    <Link href="#">App Design</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Wordpress</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Shopify</Link>
-                  </li>
-                </ul>
-                <ul>
-                  <h6>SEO & Digital Marketing</h6>
-                  <li>
-                    <Link href="#">Social Media Marketing</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Google Marketing</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Digital Marketing</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Google Adsense</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Facebook Ads</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Content Writting</Link>
-                  </li>
-                </ul>
-                <ul>
-                  <h6>Video Editing</h6>
-                  <li>
-                    <Link href="#">Social Media Marketing</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Google Marketing</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Digital Marketing</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Google Adsense</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Facebook Ads</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Content Writting</Link>
-                  </li>
-                </ul>
+            {screenWidth > "992" && (
+              <div className="col-lg-3 col-12">
+                <div className="all-course-sidebar">
+                  <form className="desktop search" role="search">
+                    <span className="search-icon">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.9167 11.6667H12.2583L12.025 11.4417C12.8417 10.4917 13.3333 9.25833 13.3333 7.91667C13.3333 4.925 10.9083 2.5 7.91667 2.5C4.925 2.5 2.5 4.925 2.5 7.91667C2.5 10.9083 4.925 13.3333 7.91667 13.3333C9.25833 13.3333 10.4917 12.8417 11.4417 12.025L11.6667 12.2583V12.9167L15.8333 17.075L17.075 15.8333L12.9167 11.6667ZM7.91667 11.6667C5.84167 11.6667 4.16667 9.99167 4.16667 7.91667C4.16667 5.84167 5.84167 4.16667 7.91667 4.16667C9.99167 4.16667 11.6667 5.84167 11.6667 7.91667C11.6667 9.99167 9.99167 11.6667 7.91667 11.6667Z"
+                          fill="#696F8C"
+                        />
+                      </svg>
+                    </span>
+                    <input
+                      className="form-control"
+                      type="search"
+                      placeholder="Search Courses..."
+                      aria-label="Search"
+                    />
+                  </form>
+                  <h4>All Categories</h4>
+                  <hr />
+                  <ul>
+                    <h6>Design & Development</h6>
+                    <li className="active">
+                      <Link href="#">Graphics Design (12)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">UI/UX Design (15)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Web Design (12)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">App Design (26)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Wordpress (12)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Shopify (12)</Link>
+                    </li>
+                  </ul>
+                  <ul>
+                    <h6>SEO & Digital Marketing</h6>
+                    <li>
+                      <Link href="#">Social Media Marketing (4)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Google Marketing (21)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Digital Marketing (25)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Google AdSense (12)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Facebook Ads (23)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Content Writing (21)</Link>
+                    </li>
+                  </ul>
+                  <ul>
+                    <h6>Video Editing</h6>
+                    <li>
+                      <Link href="#">Social Media Marketing (5)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Google Marketing (15)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Digital Marketing (22)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Google AdSense (23)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Facebook Ads (13)</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Content Writing (23)</Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="col-lg-9">
+            )}
+            <div className="col-lg-9 col-12">
+              <div className="courses-header-mob">
+                {screenWidth < "992" ? <h3>116 Course Found</h3> : ""}
+              </div>
               <div className="courses-header">
-                <h3>116 Course Found</h3>
+                {screenWidth > "992" ? <h3>116 Course Found</h3> : ""}
+                {screenWidth < "992" ? (
+                  <button
+                    className="filter btn d-flex align-items-center justify-content-center gap-1 p-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#filtercanvasExample"
+                    aria-controls="filtercanvasExample"
+                  >
+                    Filter
+                    <span>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.0007 8.66732H4.00065C3.60065 8.66732 3.33398 8.40065 3.33398 8.00065C3.33398 7.60065 3.60065 7.33398 4.00065 7.33398H12.0007C12.4007 7.33398 12.6673 7.60065 12.6673 8.00065C12.6673 8.40065 12.4007 8.66732 12.0007 8.66732Z"
+                          fill="#101840"
+                        />
+                        <path
+                          d="M10.0007 12.6673H6.00065C5.60065 12.6673 5.33398 12.4007 5.33398 12.0007C5.33398 11.6007 5.60065 11.334 6.00065 11.334H10.0007C10.4007 11.334 10.6673 11.6007 10.6673 12.0007C10.6673 12.4007 10.4007 12.6673 10.0007 12.6673Z"
+                          fill="#101840"
+                        />
+                        <path
+                          d="M14.0007 4.66732H2.00065C1.60065 4.66732 1.33398 4.40065 1.33398 4.00065C1.33398 3.60065 1.60065 3.33398 2.00065 3.33398H14.0007C14.4007 3.33398 14.6673 3.60065 14.6673 4.00065C14.6673 4.40065 14.4007 4.66732 14.0007 4.66732Z"
+                          fill="#101840"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                ) : (
+                  ""
+                )}
                 <div className="short_by">
                   <p>Sort By</p>
                   <span className="dropdown">
@@ -121,7 +202,10 @@ const AllCategories = ({ item }) => {
                         role="listbox"
                         tabIndex="-1"
                       >
-                        <li className="dropdown__filter-selected" aria-selected="true" >
+                        <li
+                          className="dropdown__filter-selected"
+                          aria-selected="true"
+                        >
                           Default
                         </li>
                         <li>
@@ -258,7 +342,9 @@ const AllCategories = ({ item }) => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href={`/course-categories/categories-details`}>
+                              <Link
+                                href={`/course-categories/categories-details`}
+                              >
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -370,7 +456,9 @@ const AllCategories = ({ item }) => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href={`/course-categories/categories-details`}>
+                              <Link
+                                href={`/course-categories/categories-details`}
+                              >
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -482,7 +570,9 @@ const AllCategories = ({ item }) => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href={`/course-categories/categories-details`}>
+                              <Link
+                                href={`/course-categories/categories-details`}
+                              >
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -594,7 +684,9 @@ const AllCategories = ({ item }) => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href={`/course-categories/categories-details`}>
+                              <Link
+                                href={`/course-categories/categories-details`}
+                              >
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -706,7 +798,9 @@ const AllCategories = ({ item }) => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href={`/course-categories/categories-details`}>
+                              <Link
+                                href={`/course-categories/categories-details`}
+                              >
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -820,7 +914,9 @@ const AllCategories = ({ item }) => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href={`/course-categories/categories-details`}>
+                              <Link
+                                href={`/course-categories/categories-details`}
+                              >
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -932,7 +1028,9 @@ const AllCategories = ({ item }) => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href={`/course-categories/categories-details`}>
+                              <Link
+                                href={`/course-categories/categories-details`}
+                              >
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -1046,7 +1144,9 @@ const AllCategories = ({ item }) => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href={`/course-categories/categories-details`}>
+                              <Link
+                                href={`/course-categories/categories-details`}
+                              >
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>
@@ -1158,7 +1258,9 @@ const AllCategories = ({ item }) => {
                             <hr />
                             <div className="price">
                               <p>$199.00</p>
-                              <Link href={`/course-categories/categories-details`}>
+                              <Link
+                                href={`/course-categories/categories-details`}
+                              >
                                 <i className="ph-arrow-right"></i>
                               </Link>
                             </div>

@@ -1,18 +1,21 @@
 import Image from "next/image";
 
 const PaymentSuccess = () => {
+
+
+
   return (
     <>
       <div
         className="modal fade"
         id="payment"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="paymentLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable payment-modal">
           <div className="modal-content">
-            <div className="modal-body">
+            <div className="modal-body" >
               <div className="payment_img">
                 <Image
                   src="/assets/images/payment/success.svg"
@@ -42,10 +45,10 @@ const PaymentSuccess = () => {
                 </div>
               </div>
               <div className="payment-btn">
-                <a className="btn bg-success text-white" href="#">
+                <button className="btn bg-success text-white w-50" data-bs-dismiss="modal">
                   Ok
-                </a>
-                <button className="btn btn-outline-success">
+                </button>
+                <button className="btn btn-outline-success w-50" >
                   <span>
                     <svg
                       width="16"

@@ -15,7 +15,7 @@ const Hero = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_6840_54334)">
+                  <g clipPath="url(#clip0_6840_54334)">
                     <rect
                       width="1920"
                       height="900"
@@ -65,7 +65,7 @@ const Hero = () => {
                       fill="#3AA1C9"
                       className="s-8 hero-8"
                     ></path>
-                    <g clip-path="url(#clip1_6840_54334)">
+                    <g clipPath="url(#clip1_6840_54334)">
                       <path
                         d="M1920 839.812H0V894.812H1920V839.812Z"
                         fill="#DCF2EA"
@@ -2061,11 +2061,11 @@ const Hero = () => {
                       y2="205.503"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset="0.442479" stop-color="#DCF2EA"></stop>
+                      <stop offset="0.442479" stopColor="#DCF2EA"></stop>
                       <stop
                         offset="1"
-                        stop-color="#DCF2EA"
-                        stop-opacity="0"
+                        stopColor="#DCF2EA"
+                        stopOpacity="0"
                       ></stop>
                     </linearGradient>
                     <clipPath id="clip0_6840_54334">

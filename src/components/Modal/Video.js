@@ -4,7 +4,7 @@ const Video = () => {
       <div
         className="modal fade"
         id="videoModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="videoLabel"
         aria-hidden="true"
       >
@@ -26,9 +26,9 @@ const Video = () => {
                 height="315"
                 src="https://www.youtube.com/embed/cF0tNG6aZ_A"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>

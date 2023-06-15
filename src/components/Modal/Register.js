@@ -155,7 +155,7 @@ const Register = () => {
                 </div>
                 <div className="mb-3 text-center forget-pass">
                   <p>
-                    Already on Eduverge? <a href="!#">Log in</a>
+                    Already on Eduverge? <Link href="!#">Log in</Link>
                   </p>
                 </div>
               </div>

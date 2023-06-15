@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Button, Form } from "react-bootstrap";
 
 const Login = () => {
+  const handleSubmit = (data) => {
+    console.log(data);
+  };
   return (
     <>
       <div
@@ -30,7 +34,8 @@ const Login = () => {
                 </p>
               </div>
               <div className="auth-pad">
-                <form action="!?#">
+                {/* form */}
+                <Form onFinish={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label">
                       Email
@@ -102,14 +107,15 @@ const Login = () => {
                     </span>
                   </div>
                   <div className="mb-3">
-                    <button
+                    <Button
                       className="btn bg-success w-100 text-white submit-btn"
                       type="submit"
                     >
                       Login
-                    </button>
+                    </Button>
                   </div>
-                </form>
+                </Form>
+                {/* form */}
                 <div className="mb-3 position-relative">
                   <hr />
                   <p className="or">or</p>
@@ -170,7 +176,7 @@ const Login = () => {
                 </div>
                 <div className="mb-3 text-center forget-pass">
                   <p>
-                    Don’t have an account? <a href="!?#">Create an account</a>
+                    Don’t have an account? <Link href="!?#">Create an account</Link>
                   </p>
                 </div>
               </div>

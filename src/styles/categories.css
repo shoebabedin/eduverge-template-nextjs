@@ -88,6 +88,7 @@
     padding-top: 0;
     padding-bottom: 112px;
     height: 100%;
+    background: #f5fbf8;
   }
   .categories h6 {
     font-size: 14px;
@@ -96,6 +97,7 @@
   .categories h4 {
     font-size: 24px;
     line-height: 32px;
+    max-width: 256px;
   }
   .categories a {
     top: auto;
@@ -103,6 +105,10 @@
     left: 50%;
     bottom: -3%;
     transform: translate(-50%, 3%);
+  }
+  .categories .col-12 {
+    width: calc(100% - 3%);
+    margin: 0 auto;
   }
 }
 

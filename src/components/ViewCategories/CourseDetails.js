@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const CourseDetails = () => {
   return (
@@ -6,7 +7,7 @@ const CourseDetails = () => {
       <section className="coursedetails">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-8 col-12 order-2 order-lg-1">
               <div className="course-details-section">
                 <p className="cat">UI/UX Design</p>
                 <h2 className="heading">
@@ -61,7 +62,7 @@ const CourseDetails = () => {
                     src="/assets/images/course-categories/course-banner.png"
                     alt=""
                     width={856}
-                        height={473}
+                    height={473}
                   />
                 </div>
                 <div className="course-description">
@@ -101,7 +102,7 @@ const CourseDetails = () => {
                       id="home-tab-pane"
                       role="tabpanel"
                       aria-labelledby="home-tab"
-                      tabindex="0"
+                      tabIndex="0"
                     >
                       <h4 className="title">Overview</h4>
                       <p className="description">
@@ -115,9 +116,9 @@ const CourseDetails = () => {
                         <br />
                         Students will often work in teams, but will be expected
                         to complete individual assignments in relation to the
-                        team&apos;s work. Assessment methods will include written
-                        exams, tests, and quizzes; oral and written research
-                        reports; reading assignments; and projects...
+                        team&apos;s work. Assessment methods will include
+                        written exams, tests, and quizzes; oral and written
+                        research reports; reading assignments; and projects...
                         <span className="readMore">Read More</span>
                       </p>
                       <h4 className="title">What Will You Learn?</h4>
@@ -171,8 +172,8 @@ const CourseDetails = () => {
                             >
                               <div className="accordion-body">
                                 <div className="row">
-                                  <div className="col-6">
-                                    <p>
+                                  <div className="col-8 col-lg-6">
+                                    <p className="d-flex align-items-center">
                                       <span>
                                         <svg
                                           width="22"
@@ -190,7 +191,7 @@ const CourseDetails = () => {
                                       Introduction
                                     </p>
                                   </div>
-                                  <div className="col-6 text-end">
+                                  <div className="col-4 col-lg-6 text-end">
                                     <p>
                                       7:00
                                       <span>
@@ -211,8 +212,8 @@ const CourseDetails = () => {
                                   </div>
                                 </div>
                                 <div className="row">
-                                  <div className="col-6">
-                                    <p>
+                                  <div className="col-8 col-lg-6">
+                                    <p className="d-flex align-items-center">
                                       <span>
                                         <svg
                                           width="22"
@@ -230,7 +231,7 @@ const CourseDetails = () => {
                                       Course Overview
                                     </p>
                                   </div>
-                                  <div className="col-6 text-end">
+                                  <div className="col-4 col-lg-6 text-end">
                                     <p>
                                       7:35
                                       <span>
@@ -272,10 +273,10 @@ const CourseDetails = () => {
                               aria-labelledby="headingTwo"
                               data-bs-parent="#accordionExample"
                             >
-                              <div className="accordion-body">
+                             <div className="accordion-body">
                                 <div className="row">
-                                  <div className="col-6">
-                                    <p>
+                                  <div className="col-8 col-lg-6">
+                                    <p className="d-flex align-items-center">
                                       <span>
                                         <svg
                                           width="22"
@@ -293,7 +294,7 @@ const CourseDetails = () => {
                                       Introduction
                                     </p>
                                   </div>
-                                  <div className="col-6 text-end">
+                                  <div className="col-4 col-lg-6 text-end">
                                     <p>
                                       7:00
                                       <span>
@@ -314,8 +315,8 @@ const CourseDetails = () => {
                                   </div>
                                 </div>
                                 <div className="row">
-                                  <div className="col-6">
-                                    <p>
+                                  <div className="col-8 col-lg-6">
+                                    <p className="d-flex align-items-center">
                                       <span>
                                         <svg
                                           width="22"
@@ -333,7 +334,7 @@ const CourseDetails = () => {
                                       Course Overview
                                     </p>
                                   </div>
-                                  <div className="col-6 text-end">
+                                  <div className="col-4 col-lg-6 text-end">
                                     <p>
                                       7:35
                                       <span>
@@ -377,8 +378,8 @@ const CourseDetails = () => {
                             >
                               <div className="accordion-body">
                                 <div className="row">
-                                  <div className="col-6">
-                                    <p>
+                                  <div className="col-8 col-lg-6">
+                                    <p className="d-flex align-items-center">
                                       <span>
                                         <svg
                                           width="22"
@@ -396,7 +397,7 @@ const CourseDetails = () => {
                                       Introduction
                                     </p>
                                   </div>
-                                  <div className="col-6 text-end">
+                                  <div className="col-4 col-lg-6 text-end">
                                     <p>
                                       7:00
                                       <span>
@@ -417,8 +418,8 @@ const CourseDetails = () => {
                                   </div>
                                 </div>
                                 <div className="row">
-                                  <div className="col-6">
-                                    <p>
+                                  <div className="col-8 col-lg-6">
+                                    <p className="d-flex align-items-center">
                                       <span>
                                         <svg
                                           width="22"
@@ -436,7 +437,7 @@ const CourseDetails = () => {
                                       Course Overview
                                     </p>
                                   </div>
-                                  <div className="col-6 text-end">
+                                  <div className="col-4 col-lg-6 text-end">
                                     <p>
                                       7:35
                                       <span>
@@ -480,8 +481,8 @@ const CourseDetails = () => {
                             >
                               <div className="accordion-body">
                                 <div className="row">
-                                  <div className="col-6">
-                                    <p>
+                                  <div className="col-8 col-lg-6">
+                                    <p className="d-flex align-items-center">
                                       <span>
                                         <svg
                                           width="22"
@@ -499,7 +500,7 @@ const CourseDetails = () => {
                                       Introduction
                                     </p>
                                   </div>
-                                  <div className="col-6 text-end">
+                                  <div className="col-4 col-lg-6 text-end">
                                     <p>
                                       7:00
                                       <span>
@@ -520,8 +521,8 @@ const CourseDetails = () => {
                                   </div>
                                 </div>
                                 <div className="row">
-                                  <div className="col-6">
-                                    <p>
+                                  <div className="col-8 col-lg-6">
+                                    <p className="d-flex align-items-center">
                                       <span>
                                         <svg
                                           width="22"
@@ -539,7 +540,7 @@ const CourseDetails = () => {
                                       Course Overview
                                     </p>
                                   </div>
-                                  <div className="col-6 text-end">
+                                  <div className="col-4 col-lg-6 text-end">
                                     <p>
                                       7:35
                                       <span>
@@ -570,7 +571,7 @@ const CourseDetails = () => {
                       id="profile-tab-pane"
                       role="tabpanel"
                       aria-labelledby="profile-tab"
-                      tabindex="0"
+                      tabIndex="0"
                     >
                       <h4 className="rating-title">Student Ratings & Review</h4>
                       <p className="rating-description">
@@ -616,7 +617,7 @@ const CourseDetails = () => {
                                 >
                                   <div
                                     className="progress-bar bg-warning"
-                                    style={{width: "0%"}}
+                                    style={{ width: "0%" }}
                                   ></div>
                                 </div>
                                 <span>0 Rating</span>
@@ -635,7 +636,7 @@ const CourseDetails = () => {
                                 >
                                   <div
                                     className="progress-bar bg-warning"
-                                    style={{width: "100%"}}
+                                    style={{ width: "100%" }}
                                   ></div>
                                 </div>
                                 <span>2 Rating</span>
@@ -654,7 +655,7 @@ const CourseDetails = () => {
                                 >
                                   <div
                                     className="progress-bar bg-warning"
-                                   style={{width: "0%"}}
+                                    style={{ width: "0%" }}
                                   ></div>
                                 </div>
                                 <span>0 Rating</span>
@@ -673,7 +674,7 @@ const CourseDetails = () => {
                                 >
                                   <div
                                     className="progress-bar bg-warning"
-                                    style={{width: "0%"}}
+                                    style={{ width: "0%" }}
                                   ></div>
                                 </div>
                                 <span>0 Rating</span>
@@ -692,7 +693,7 @@ const CourseDetails = () => {
                                 >
                                   <div
                                     className="progress-bar bg-warning"
-                                   style={{width: "0%"}}
+                                    style={{ width: "0%" }}
                                   ></div>
                                 </div>
                                 <span>0 Rating</span>
@@ -790,7 +791,6 @@ const CourseDetails = () => {
                               </p>
                             </div>
                           </div>
-                          <hr />
                         </div>
                       </div>
                     </div>
@@ -798,7 +798,7 @@ const CourseDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-12 order-1 order-lg-2">
               <div className="sidebar-item">
                 <div id="sidebar">
                   <div className="img">
@@ -824,7 +824,7 @@ const CourseDetails = () => {
                   <h3>Introduction to User Experience Design-2022</h3>
                   <div className="instructor-list">
                     <div className="row">
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-instructor">
                           <p>
                             <span>
@@ -846,15 +846,15 @@ const CourseDetails = () => {
                         </div>
                       </div>
 
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-end text-end">
-                          <a href="#">Cristofer Jonas</a>
+                          <Link href="#">Cristofer Jonas</Link>
                         </div>
                       </div>
                       <div className="col-12">
                         <hr />
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-instructor">
                           <p>
                             <span>
@@ -875,7 +875,7 @@ const CourseDetails = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-end text-end">
                           <p>20:12:51 Hrs</p>
                         </div>
@@ -883,7 +883,7 @@ const CourseDetails = () => {
                       <div className="col-12">
                         <hr />
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-instructor">
                           <p>
                             <span>
@@ -904,7 +904,7 @@ const CourseDetails = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-end text-end">
                           <p>28 January, 2022</p>
                         </div>
@@ -912,7 +912,7 @@ const CourseDetails = () => {
                       <div className="col-12">
                         <hr />
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-instructor">
                           <p>
                             <span>
@@ -926,37 +926,37 @@ const CourseDetails = () => {
                                 <path
                                   d="M5.25 5.25V10.4156C5.25 14.1375 8.23125 17.2219 11.9531 17.25C12.8435 17.2562 13.7263 17.0862 14.5506 16.7497C15.375 16.4133 16.1247 15.917 16.7564 15.2896C17.3882 14.6622 17.8896 13.916 18.2317 13.094C18.5739 12.272 18.75 11.3904 18.75 10.5V5.25C18.75 5.05109 18.671 4.86032 18.5303 4.71967C18.3897 4.57902 18.1989 4.5 18 4.5H6C5.80109 4.5 5.61032 4.57902 5.46967 4.71967C5.32902 4.86032 5.25 5.05109 5.25 5.25Z"
                                   stroke="#101840"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                                 <path
                                   d="M9 21H15"
                                   stroke="#101840"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                                 <path
                                   d="M12 17.25V21"
                                   stroke="#101840"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                                 <path
                                   d="M18.5801 12H19.4988C20.2945 12 21.0575 11.6839 21.6201 11.1213C22.1828 10.5587 22.4988 9.79565 22.4988 9V7.5C22.4988 7.30109 22.4198 7.11032 22.2792 6.96967C22.1385 6.82902 21.9477 6.75 21.7488 6.75H18.7488"
                                   stroke="#101840"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                                 <path
                                   d="M5.43809 12H4.49121C3.69556 12 2.9325 11.6839 2.36989 11.1213C1.80728 10.5587 1.49121 9.79565 1.49121 9V7.5C1.49121 7.30109 1.57023 7.11032 1.71088 6.96967C1.85153 6.82902 2.0423 6.75 2.24121 6.75H5.24121"
                                   stroke="#101840"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                               </svg>
                             </span>
@@ -964,7 +964,7 @@ const CourseDetails = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-end text-end">
                           <p>Intermediate</p>
                         </div>
@@ -972,7 +972,7 @@ const CourseDetails = () => {
                       <div className="col-12">
                         <hr />
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-instructor">
                           <p>
                             <span>
@@ -986,30 +986,30 @@ const CourseDetails = () => {
                                 <path
                                   d="M3 6V13.5"
                                   stroke="#101840"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                                 <path
                                   d="M5.08008 20.2504C5.83051 19.0994 6.85624 18.1538 8.06436 17.4993C9.27247 16.8447 10.6248 16.502 11.9988 16.502C13.3729 16.502 14.7252 16.8447 15.9333 17.4993C17.1414 18.1538 18.1671 19.0994 18.9176 20.2504"
                                   stroke="#101840"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                                 <path
                                   d="M21 6L12 9L3 6L12 3L21 6Z"
                                   stroke="#101840"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                                 <path
                                   d="M15.8719 7.70703C16.5599 8.45832 17.0144 9.39355 17.1801 10.3987C17.3458 11.4038 17.2155 12.4355 16.805 13.3678C16.3946 14.3002 15.7218 15.093 14.8686 15.6496C14.0154 16.2062 13.0187 16.5026 12 16.5026C10.9813 16.5026 9.9846 16.2062 9.13141 15.6496C8.27822 15.093 7.6054 14.3002 7.19497 13.3678C6.78453 12.4355 6.65422 11.4038 6.81991 10.3987C6.98561 9.39355 7.44015 8.45832 8.12813 7.70703"
                                   stroke="#101840"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                               </svg>
                             </span>
@@ -1017,7 +1017,7 @@ const CourseDetails = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-end text-end">
                           <p>258,00,00</p>
                         </div>
@@ -1025,7 +1025,7 @@ const CourseDetails = () => {
                       <div className="col-12">
                         <hr />
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-instructor">
                           <p>
                             <span>
@@ -1046,7 +1046,7 @@ const CourseDetails = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-end text-end">
                           <p>English</p>
                         </div>
@@ -1054,7 +1054,7 @@ const CourseDetails = () => {
                       <div className="col-12">
                         <hr />
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-instructor">
                           <p>
                             <span>
@@ -1075,7 +1075,7 @@ const CourseDetails = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-6">
                         <div className="sidebar-end text-end">
                           <ul className="star">
                             <li>
@@ -1138,10 +1138,10 @@ const CourseDetails = () => {
                     <h4>Tags</h4>
                     <ul className="tag-items">
                       <li>
-                        <a href="#">UI/UX Design</a>
+                        <Link href="#">UI/UX Design</Link>
                       </li>
                       <li>
-                        <a href="#">User Inteface</a>
+                        <Link href="#">User Inteface</Link>
                       </li>
                     </ul>
                   </div>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "btn": "Computer Science",
+    "filter": "computerscience"
+  },
+  {
+    "id": 1,
+    "btn": "Business",
+    "filter": "business"
+  },
+  {
+    "id": 1,
+    "btn": "Marketing",
+    "filter": "marketing"
+  },
+  {
+    "id": 1,
+    "btn": "Sociology",
+    "filter": "sociology"
+  },
+  {
+    "id": 1,
+    "btn": "Health & Care",
+    "filter": "healthcare"
+  },
+  {
+    "id": 1,
+    "btn": "Social Science",
+    "filter": "socialscience"
+  },
+  {
+    "id": 1,
+    "btn": "Personal Development",
+    "filter": "personaldevelopment"
+  },
+  {
+    "id": 1,
+    "btn": "Arts & Huminites",
+    "filter": "artsHuminities"
+  }
+]

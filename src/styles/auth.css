@@ -239,17 +239,38 @@
   width: fit-content;
   margin: 0 auto;
 }
-.loginLink-modal .modal-content .auth-pad .scial-link a {
+
+/* responsive */
+@media (min-width: 1358px) and (max-width: 1440px) {
 }
-.loginLink-modal .modal-content .auth-pad {
+@media (min-width: 1200px) and (max-width: 1357px) {
 }
-.loginLink-modal .modal-content .auth-pad {
+@media (min-width: 1120px) and (max-width: 1199px) {
 }
-.loginLink-modal .modal-content .auth-pad {
+@media (min-width: 992px) and (max-width: 1119px) {
 }
-.loginLink-modal .modal-content .auth-pad {
+@media screen and (max-width: 992px) {
+  .login-modal .modal-content h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .login-modal .modal-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .login-modal .modal-content .auth-pad {
+    padding: 0 16px;
+    margin-top: 24px;
+  }
+  .login-modal .modal-content .modal-body {
+    padding: 0;
+  }
+  .login-modal .modal-content .auth-pad .scial-link {
+    padding: 12px 14px;
+    gap: 8px;
+  }
+  .login-modal .modal-content .auth-pad .forget-pass p {
+    text-align: left;
+  }
 }
-.loginLink-modal .modal-content .auth-pad {
-}
-.loginLink-modal .modal-content .auth-pad {
-}
+/* responsive */

@@ -15,7 +15,6 @@ const Layout = ({ children }) => {
           await new Promise((resolve) => setTimeout(resolve, 3000));
     
           setLoading(false);
-          const styleLoading = {};
         }; 
         fetchData();
       }, [title]);

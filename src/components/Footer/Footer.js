@@ -138,7 +138,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="col-lg-4 col-12">
-                <p className="text-end">© 2000-2021, All Rights Reserved</p>
+                <p className="text-end">© 2000-{new Date().getFullYear()}, All Rights Reserved</p>
               </div>
             </div>
           </div>

@@ -16,9 +16,12 @@ const Career = () => {
               </p>
             </div>
             <div className="col-lg-2 col-12 text-end">
-              <a href="#" className="btn border border-success-subtle text-success">
+              <Link
+                href="/course-categories"
+                className="btn border border-success-subtle text-success career-btn"
+              >
                 Explore All
-              </a>
+              </Link>
             </div>
             <div className="col-lg-4 col-12">
               <div className="mix-item">
@@ -27,8 +30,8 @@ const Career = () => {
                     className="img-fluid"
                     src="/assets/images/career/item1.png"
                     alt=""
-                    width={100}
-                    height={100}
+                    width={368}
+                    height={209}
                   />
                   <div className="overlay"></div>
                 </div>
@@ -123,9 +126,9 @@ const Career = () => {
                       <hr />
                       <div className="price">
                         <p>Free</p>
-                        <a href="#">
+                        <Link href="/course-categories/categories-details">
                           <i className="ph-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -139,8 +142,8 @@ const Career = () => {
                     className="img-fluid"
                     src="/assets/images/career/item2.png"
                     alt=""
-                    width={100}
-                    height={100}
+                    width={368}
+                    height={209}
                   />
                   <div className="overlay"></div>
                 </div>
@@ -235,9 +238,9 @@ const Career = () => {
                       <hr />
                       <div className="price">
                         <p>Free</p>
-                        <a href="#">
+                        <Link href="/course-categories/categories-details">
                           <i className="ph-arrow-right"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -251,8 +254,8 @@ const Career = () => {
                     className="img-fluid"
                     src="/assets/images/career/item3.png"
                     alt=""
-                    width={100}
-                    height={100}
+                    width={368}
+                    height={209}
                   />
                   <div className="overlay"></div>
                 </div>
@@ -350,7 +353,7 @@ const Career = () => {
                       <hr />
                       <div className="price">
                         <p>Free</p>
-                        <Link href="#">
+                        <Link href="/course-categories/categories-details">
                           <i className="ph-arrow-right"></i>
                         </Link>
                       </div>
@@ -360,7 +363,10 @@ const Career = () => {
               </div>
             </div>
             <div className="col-12 mob-btn">
-              <Link href="#" className="btn border border-success-subtle text-success">
+              <Link
+                href="/course-categories"
+                className="btn border border-success-subtle text-success"
+              >
                 Explore All
               </Link>
             </div>

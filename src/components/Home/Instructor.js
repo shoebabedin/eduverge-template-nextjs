@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { Button } from "react-bootstrap";
 
 const Instructor = () => {
-  const route = useRouter();
+  const router = useRouter();
 
   const handleCheck = () => {
     const element = document.querySelector('[data-bs-target="#login"]');
@@ -11,11 +11,11 @@ const Instructor = () => {
       console.log("not login");
       element.click();
       setTimeout(() => {
-        route.push("/become-an-instructor");
+        router.push("/become-an-instructor");
       }, 100); // Adjust the delay as needed
     } else {
       console.log("login");
-      route.push("/become-an-instructor");
+      router.push("/become-an-instructor");
     }
   };
   return (

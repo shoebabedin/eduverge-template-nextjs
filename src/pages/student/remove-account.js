@@ -17,7 +17,8 @@ const RemoveAccount = () => {
     }
   }, []);
 
-  console.log(user);
+
+  
   return (
     <>
       <StudentLayout>

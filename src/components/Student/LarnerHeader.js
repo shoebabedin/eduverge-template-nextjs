@@ -5,7 +5,8 @@ import { useRouter } from "next/router";
 const LarnerHeader = ({data}) => {
   const router = useRouter();
   const pathname = router.pathname.split("/");
-  console.log(pathname[2]);
+
+  
   return (
     <>
       <section className="course-categories">

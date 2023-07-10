@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0",
+    "img": "palette",
+    "name": "Arts and Design"
+  },
+  {
+    "id": "1",
+    "img": "filecode",
+    "name": "Development"
+  },
+  {
+    "id": "2",
+    "img": "presentationchart",
+    "name": "Marketing"
+  },
+  {
+    "id": "3",
+    "img": "cpu",
+    "name": "Machine Learning"
+  },
+  {
+    "id": "4",
+    "img": "desktoptower",
+    "name": "Computer Science"
+  },
+  {
+    "id": "5",
+    "img": "filmstrip",
+    "name": "Video Editing"
+  },
+  {
+    "id": "6",
+    "img": "calculator",
+    "name": "Mathematics"
+  },
+  {
+    "id": "7",
+    "img": "atom",
+    "name": "Sociology"
+  }
+]

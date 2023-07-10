@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "img": "diamondsfour",
+    "name": "Learn anything",
+    "desc": "Whether you want to develop as a professional or discover a new hobby, there&aposs an online course."
+  },
+  {
+    "id": 1,
+    "img": "chartpie",
+    "name": "Flexible learning",
+    "desc": "Get a custom learning plan tailor to fit your busy life.Learn at your own pace and reach your goal."
+  },
+  {
+    "id": 2,
+    "img": "circlewavycheck",
+    "name": "Learn with experts",
+    "desc": "Whether you want to develop as a professional or discover a new hobby, there&aposs an online course."
+  },
+  {
+    "id": 3,
+    "img": "usercirclegear",
+    "name": "Personalized learning",
+    "desc": "Whether you want to develop as a professional or discover a new hobby, there&aposs an online course."
+  },
+  {
+    "id": 4,
+    "img": "pokerchip",
+    "name": "Trusted content",
+    "desc": "Get a custom learning plan tailor to fit your busy life.Learn at your own pace and reach your goal."
+  },
+  {
+    "id": 5,
+    "img": "handfist",
+    "name": "Tools to empower",
+    "desc": "Whether you want to develop as a professional or discover a new hobby, there&aposs an online course."
+  }
+]

@@ -3,7 +3,7 @@ const NotificationCanvas = () => {
     <>
       <div
         className="offcanvas offcanvas-start notificationCanvas"
-        tabindex="-1"
+        tabIndex="-1"
         id="notificationCanvas"
         aria-labelledby="notificationCanvasLabel"
       >

@@ -5,7 +5,7 @@ const FilterCanvas = () => {
     <>
       <div
         className="offcanvas offcanvas-end category-canvas"
-        tabindex="-1"
+        tabIndex="-1"
         id="filtercanvasExample"
         aria-labelledby="filtercanvasExampleLabel"
       >

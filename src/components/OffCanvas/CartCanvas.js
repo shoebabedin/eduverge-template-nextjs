@@ -7,7 +7,7 @@ const CartCanvas = () => {
     <>
       <div
         className="offcanvas offcanvas-start mob_navbar cart-canvas"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasCart"
         aria-labelledby="offcanvasCartLabel"
       >

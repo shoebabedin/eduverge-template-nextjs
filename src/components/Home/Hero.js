@@ -2109,7 +2109,7 @@ const Hero = () => {
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#videoModal"
-                      data-videoModal="https://www.youtube.com/embed/aILlVYUSwPg"
+                      data-videomodal="https://www.youtube.com/embed/aILlVYUSwPg"
                     >
                       <span>
                         <svg

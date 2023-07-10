@@ -3,9 +3,9 @@ const Preloader = () => {
     <>
       <div id="preloader">
         <div>
-          <div class="wrapper">
+          <div className="wrapper">
             <svg>
-              <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              <text x="50%" y="50%" dy=".35em" textAnchor="middle">
                 EDUVERGE
               </text>
             </svg>

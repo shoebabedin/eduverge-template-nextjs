@@ -3,7 +3,7 @@ const SubNav = () => {
     <>
       <div
         className="offcanvas offcanvas-end nav-offcanvas"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel"
       >

@@ -54,7 +54,6 @@ const Navbar = () => {
     }
   }, []);
 
-  console.log(user);
 
   useEffect(() => {
     const handleScroll = () => {

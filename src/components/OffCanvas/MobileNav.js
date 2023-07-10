@@ -14,7 +14,7 @@ const MobileNav = ({
     <>
       <div
         className="offcanvas offcanvas-start mob_navbar"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel"
       >

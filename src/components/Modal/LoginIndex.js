@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Button, Form } from "react-bootstrap";
 
 const Login = () => {
-  const handleSubmit = (data) => {
-    console.log(data);
+  const onFinish = (values) => {
+    console.log('Form submitted:', values);
   };
   return (
     <>
@@ -35,7 +35,7 @@ const Login = () => {
               </div>
               <div className="auth-pad">
                 {/* form */}
-                <Form onFinish={handleSubmit}>
+                <Form onFinish={onFinish}>
                   <div className="mb-3">
                     <label htmlFor="email" className="form-label">
                       Email

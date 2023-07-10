@@ -171,7 +171,7 @@ const Categories = () => {
             </div>
             <div className="col-lg-6 col-md-12 text-end">
               <Link
-                href="#"
+                href="/course-categories"
                 className="btn border border-success-subtle text-success"
               >
                 Explore All

@@ -1,7 +1,23 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/router";
+import { Button } from "react-bootstrap";
 
 const Instructor = () => {
+  const route = useRouter();
+
+  const handleCheck = () => {
+    const element = document.querySelector('[data-bs-target="#login"]');
+    if (localStorage.getItem("token") == null) {
+      console.log("not login");
+      element.click();
+      setTimeout(() => {
+        route.push("/become-an-instructor");
+      }, 100); // Adjust the delay as needed
+    } else {
+      console.log("login");
+      route.push("/become-an-instructor");
+    }
+  };
   return (
     <>
       <section className="instructor">
@@ -14,9 +30,12 @@ const Instructor = () => {
                 <br />
                 Get started
               </p>
-              <Link href="#" className="btn bg-success text-white">
+              <Button
+                className="btn bg-success text-white"
+                onClick={handleCheck}
+              >
                 Get Started Now
-              </Link>
+              </Button>
             </div>
             <div className="col-lg-6 col-md-6 col-12">
               <Image

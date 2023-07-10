@@ -6,16 +6,13 @@ const RemoveAccount = () => {
 
   useEffect(() => {
     const isLogin = localStorage.getItem("token");
-    // console.log(isLogin);
 
     if (isLogin) {
       const tokenObject = JSON.parse(isLogin);
-      console.log(tokenObject.email);
       setUser(tokenObject);
     }
   }, []);
 
-  console.log(user);
   return (
     <>
       <StudentLayout>
@@ -30,7 +27,7 @@ const RemoveAccount = () => {
           <hr />
           <div className="payment-method-items">
             <div className="card-icon-number">
-              <p className="card-number">{user?.name}</p>
+              {/* <p className="card-number">{user?.name}</p> */}
             </div>
 
             <button

@@ -15,29 +15,22 @@ const LarnerProfileMenu = () => {
 
     if (isTeacher) {
       const tokenObject = JSON.parse(isTeacher);
-      console.log(tokenObject.teacher);
       setTeacher(tokenObject);
     }
 
     if (isUserRole) {
       const tokenObject = JSON.parse(isUserRole);
-      console.log(tokenObject.teacher);
       setRole(tokenObject);
     }
   }, [role.role]);
-
-  console.log(pathname);
-  // console.log("role",role.role);
 
   return (
     <>
       <ul className="larner-profile-menu">
         <li
-          className={`${ pathname === `/${role.role}/settings` ? "active" : "" }`}
+          className={`${pathname === `/${role.role}/settings` ? "active" : ""}`}
         >
-          <Link
-            href={`/${role.role}/settings`}
-          >
+          <Link href={`/${role.role}/settings`}>
             <span>
               <svg
                 width="24"
@@ -60,19 +53,15 @@ const LarnerProfileMenu = () => {
                 />
               </svg>
             </span>
-            Profile Settings 
+            Profile Settings
           </Link>
         </li>
         <li
           className={`${
-            pathname === `/${role.role}/change-password`
-              ? "active"
-              : ""
+            pathname === `/${role.role}/change-password` ? "active" : ""
           }`}
         >
-          <Link
-             href={`/${role.role}/change-password`}
-          >
+          <Link href={`/${role.role}/change-password`}>
             <span>
               <svg
                 width="24"
@@ -92,14 +81,10 @@ const LarnerProfileMenu = () => {
         </li>
         <li
           className={`${
-            pathname === `/${role.role}/notification`
-              ? "active"
-              : ""
+            pathname === `/${role.role}/notification` ? "active" : ""
           }`}
         >
-          <Link
-             href={`/${role.role}/notification`}
-          >
+          <Link href={`/${role.role}/notification`}>
             <span>
               <svg
                 width="24"
@@ -119,12 +104,10 @@ const LarnerProfileMenu = () => {
         </li>
         <li
           className={`${
-            pathname === `/${role.role}/payment-method`
-              ? "active"
-              : ""
+            pathname === `/${role.role}/payment-method` ? "active" : ""
           }`}
         >
-          <Link  href={`/${role.role}/payment-method`}>
+          <Link href={`/${role.role}/payment-method`}>
             <span>
               <svg
                 width="24"
@@ -144,12 +127,10 @@ const LarnerProfileMenu = () => {
         </li>
         <li
           className={`${
-            pathname === `/${role.role}/remove-account`
-              ? "active"
-              : ""
+            pathname === `/${role.role}/remove-account` ? "active" : ""
           }`}
         >
-          <Link  href={`/${role.role}/remove-account`}>
+          <Link href={`/${role.role}/remove-account`}>
             <span>
               <svg
                 width="24"

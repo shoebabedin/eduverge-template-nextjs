@@ -3,7 +3,6 @@ import LarnerHeader from "./LarnerHeader";
 import LarnerProfileMenu from "./LarnerProfileMenu";
 
 const StudentLayout = ({ children }) => {
-  
   return (
     <>
       <LarnerHeader />

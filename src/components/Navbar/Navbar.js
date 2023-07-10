@@ -125,7 +125,7 @@ const Navbar = () => {
             {user !== null && user ? (
               <div className="my-courses">
                 <Button onClick={handleToggle} className="userRole-mob">
-                  {userSwitch ? "Student" : "Instructor"}
+                  {userSwitch ? "Instructor" : "Student"}
                   <span className="ms-1">
                     <svg
                       width="14"

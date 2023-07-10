@@ -34,10 +34,10 @@ const WithdrawFound = () => {
                         id="floatingSelect"
                         aria-label="Floating label select example"
                       >
-                        <option value="debit-card" selected>
+                        <option defaultValue="debit-card" selected>
                           Debit Card
                         </option>
-                        <option value="credit-card">Credit Card</option>
+                        <option defaultValue="credit-card">Credit Card</option>
                       </select>
                     </div>
                   </div>
@@ -52,7 +52,7 @@ const WithdrawFound = () => {
                         id="noCheck"
                         onClick={() => setSelectedOptions(false)}
                       />
-                      <label className="form-check-label" for="noCheck">
+                      <label className="form-check-label" htmlFor="noCheck">
                         Amount <span>$50.00</span>
                       </label>
                     </div>
@@ -64,7 +64,7 @@ const WithdrawFound = () => {
                         id="yesCheck"
                         onClick={() => setSelectedOptions(true)}
                       />
-                      <label className="form-check-label" for="yesCheck">
+                      <label className="form-check-label" htmlFor="yesCheck">
                         Other Amount
                         <span className="minimum-amount">
                           (Minimum Amount $30.00)

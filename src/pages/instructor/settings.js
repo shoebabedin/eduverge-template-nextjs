@@ -14,29 +14,29 @@ const Settings = () => {
           <hr />
           <form action="#" className="row">
             <div className="col-lg-6 mb-3">
-              <label for="firstName" className="form-label">
+              <label htmlFor="firstName" className="form-label">
                 First Name
               </label>
               <input
-                value="Abul"
+                defaultValue="Abul"
                 type="text"
                 id="firstName"
                 className="form-control"
               />
             </div>
             <div className="col-lg-6 mb-3">
-              <label for="lastName" className="form-label">
+              <label htmlFor="lastName" className="form-label">
                 Last Name
               </label>
               <input
-                value="Hasan"
+                defaultValue="Hasan"
                 type="text"
                 id="lastName"
                 className="form-control"
               />
             </div>
             <div className="col-12 mb-3">
-              <label for="profile-textarea" className="form-label">
+              <label htmlFor="profile-textarea" className="form-label">
                 Bio Description
               </label>
               <textarea
@@ -62,41 +62,41 @@ const Settings = () => {
               </div>
             </div>
             <div className="col-lg-6 mb-3">
-              <label for="firstName" className="form-label">
+              <label htmlFor="firstName" className="form-label">
                 Job Title
               </label>
               <input
-                value="UI/UX Designer"
+                defaultValue="UI/UX Designer"
                 type="text"
                 id="firstName"
                 className="form-control"
               />
             </div>
             <div className="col-lg-6 mb-3">
-              <label for="gender" className="form-label">
+              <label htmlFor="gender" className="form-label">
                 Gender
               </label>
               <select name="" id="gender" className="form-control">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
+                <option defaultValue="male">Male</option>
+                <option defaultValue="female">Female</option>
               </select>
             </div>
             <div className="col-lg-6 mb-3">
-              <label for="country" className="form-label">
+              <label htmlFor="country" className="form-label">
                 Country
               </label>
               <select name="" id="country" className="form-control">
-                <option value="canada">Canada</option>
-                <option value="bangladesh">Bangladesh</option>
+                <option defaultValue="canada">Canada</option>
+                <option defaultValue="bangladesh">Bangladesh</option>
               </select>
             </div>
             <div className="col-lg-6 mb-3">
-              <label for="city" className="form-label">
+              <label htmlFor="city" className="form-label">
                 City
               </label>
               <select name="" id="city" className="form-control">
-                <option value="toronto">Toronto</option>
-                <option value="dhaka">Dhaka</option>
+                <option defaultValue="toronto">Toronto</option>
+                <option defaultValue="dhaka">Dhaka</option>
               </select>
             </div>
             <div className="col-12 submit-btn">

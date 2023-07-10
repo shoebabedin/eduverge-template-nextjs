@@ -68,10 +68,23 @@ const MobileNav = ({
             )}
             <button
               type="button"
-              className="btn-close"
+              className="btn"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-            ></button>
+            >
+              <svg
+                width="16"
+                height="12"
+                viewBox="0 0 16 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 6C0 5.4477 0.44772 5 1 5H11C11.5523 5 12 5.4477 12 6C12 6.5523 11.5523 7 11 7H1C0.44772 7 0 6.5523 0 6ZM0 1C0 0.44772 0.44772 0 1 0H15C15.5523 0 16 0.44772 16 1C16 1.55228 15.5523 2 15 2H1C0.44772 2 0 1.55228 0 1ZM0 11C0 11.5523 0.44772 12 1 12H6.235C6.7873 12 7.235 11.5523 7.235 11C7.235 10.4477 6.7873 10 6.235 10H1C0.44772 10 0 10.4477 0 11Z"
+                  fill="#317159"
+                />
+              </svg>
+            </button>
           </div>
         </div>
         <div className="offcanvas-body">
@@ -82,129 +95,162 @@ const MobileNav = ({
                   <div className="auth-btn">
                     <ul>
                       <li className="nav-item dropdown">
-                        <Link
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
+                        <div
+                          style={{
+                            background: "var(--neutral-n-100, #F4F6FA)"
+                          }}
                         >
-                          <svg
-                            width="32"
-                            height="32"
-                            viewBox="0 0 32 32"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
+                          <Link
+                            className="nav-link "
+                            type="button"
+                            href="#"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
                           >
-                            <rect
+                            <svg
                               width="32"
                               height="32"
-                              rx="16"
-                              fill="#EDEFF5"
-                            />
-                            <path
-                              d="M15.998 18.999C19.3118 18.999 21.998 16.3127 21.998 12.999C21.998 9.68531 19.3118 6.99902 15.998 6.99902C12.6843 6.99902 9.99805 9.68531 9.99805 12.999C9.99805 16.3127 12.6843 18.999 15.998 18.999Z"
-                              stroke="#101840"
-                              strokeWidth="1.5"
-                              strokeMiterlimit="10"
-                            />
-                            <path
-                              d="M6.9043 24.2489C7.8258 22.6525 9.15133 21.3267 10.7476 20.405C12.3439 19.4833 14.1547 18.998 15.998 18.998C17.8413 18.998 19.6522 19.4833 21.2485 20.405C22.8448 21.3267 24.1703 22.6525 25.0918 24.2489"
-                              stroke="#101840"
-                              strokeWidth="1.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                          <span className="ms-2 me-2">{user.name}</span>
-                        </Link>
-                        <div className="dropdown-menu">
-                          {userSwitch ? (
-                            <ul className="ps-0">
-                              <li>
-                                <Link
-                                  className="dropdown-item"
-                                  href="/instructor"
-                                >
-                                  My Profile
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  className="dropdown-item"
-                                  href="/instructor/settings"
-                                >
-                                  Settings
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  className="dropdown-item"
-                                  href="/my-courses"
-                                >
-                                  My Courses
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  className="dropdown-item"
-                                  href="/instructor/withdraw"
-                                >
-                                  Withdraw
-                                </Link>
-                              </li>
-                              <li onClick={handleLogout}>
-                                <Link className="dropdown-item" href="/">
-                                  Sign Out
-                                </Link>
-                              </li>
-                            </ul>
-                          ) : (
-                            <ul className="ps-0">
-                              <li>
-                                <Link className="dropdown-item" href="/student">
-                                  My Profile
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  className="dropdown-item"
-                                  href="/student/settings"
-                                >
-                                  Settings
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  className="dropdown-item"
-                                  href="/my-courses"
-                                >
-                                  My Courses
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  className="dropdown-item"
-                                  href="/student/order-history"
-                                >
-                                  Order History
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  className="dropdown-item"
-                                  href="/my-certification"
-                                >
-                                  My Certification
-                                </Link>
-                              </li>
-                              <li onClick={handleLogout}>
-                                <Link className="dropdown-item" href="/">
-                                  Logout
-                                </Link>
-                              </li>
-                            </ul>
-                          )}
+                              viewBox="0 0 32 32"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="32"
+                                height="32"
+                                rx="16"
+                                fill="#EDEFF5"
+                              />
+                              <path
+                                d="M15.998 18.999C19.3118 18.999 21.998 16.3127 21.998 12.999C21.998 9.68531 19.3118 6.99902 15.998 6.99902C12.6843 6.99902 9.99805 9.68531 9.99805 12.999C9.99805 16.3127 12.6843 18.999 15.998 18.999Z"
+                                stroke="#101840"
+                                strokeWidth="1.5"
+                                strokeMiterlimit="10"
+                              />
+                              <path
+                                d="M6.9043 24.2489C7.8258 22.6525 9.15133 21.3267 10.7476 20.405C12.3439 19.4833 14.1547 18.998 15.998 18.998C17.8413 18.998 19.6522 19.4833 21.2485 20.405C22.8448 21.3267 24.1703 22.6525 25.0918 24.2489"
+                                stroke="#101840"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                            <span className="ms-2 me-2">{user.name}</span>
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.06 5.72656L8 8.7799L4.94 5.72656L4 6.66656L8 10.6666L12 6.66656L11.06 5.72656Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </Link>
+                          <div className="collapse" id="collapseExample">
+                            <div
+                              className="card card-body"
+                              style={{
+                                background: "transparent",
+                                border: " 0"
+                              }}
+                            >
+                              <div className="">
+                                {userSwitch ? (
+                                  <ul className="ps-0">
+                                    <li>
+                                      <Link
+                                        className="dropdown-item"
+                                        href="/instructor"
+                                      >
+                                        My Profile
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        className="dropdown-item"
+                                        href="/instructor/settings"
+                                      >
+                                        Settings
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        className="dropdown-item"
+                                        href="/my-courses"
+                                      >
+                                        My Courses
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        className="dropdown-item"
+                                        href="/instructor/withdraw"
+                                      >
+                                        Withdraw
+                                      </Link>
+                                    </li>
+                                    <li onClick={handleLogout}>
+                                      <Link className="dropdown-item" href="/">
+                                        Sign Out
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                ) : (
+                                  <ul className="ps-0">
+                                    <li>
+                                      <Link
+                                        className="dropdown-item"
+                                        href="/student"
+                                      >
+                                        My Profile
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        className="dropdown-item"
+                                        href="/student/settings"
+                                      >
+                                        Settings
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        className="dropdown-item"
+                                        href="/my-courses"
+                                      >
+                                        My Courses
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        className="dropdown-item"
+                                        href="/student/order-history"
+                                      >
+                                        Order History
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        className="dropdown-item"
+                                        href="/my-certification"
+                                      >
+                                        My Certification
+                                      </Link>
+                                    </li>
+                                    <li onClick={handleLogout}>
+                                      <Link className="dropdown-item" href="/">
+                                        Logout
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                )}
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </li>
                     </ul>
@@ -264,16 +310,23 @@ const MobileNav = ({
                   Cart (2)
                 </button>
               </li>
-              {user !== null && user ? 
-              <li>
-                <button className="btn" data-bs-toggle="offcanvas" data-bs-target="#notificationCanvas" aria-controls="notificationCanvas">Notification</button>
-              </li>
-              :
-              ""}
+              {user !== null && user ? (
+                <li>
+                  <button
+                    className="btn"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#notificationCanvas"
+                    aria-controls="notificationCanvas"
+                  >
+                    Notification
+                  </button>
+                </li>
+              ) : (
+                ""
+              )}
             </ul>
 
-            {user == null && user ? 
-              
+            {user === null ? (
               <div className="auth-btn">
                 <Link
                   href="#"
@@ -292,9 +345,9 @@ const MobileNav = ({
                   Register Now
                 </Link>
               </div>
-              :
+            ) : (
               ""
-            }
+            )}
           </div>
         </div>
       </div>

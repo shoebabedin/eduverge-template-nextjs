@@ -229,7 +229,7 @@ const Instructor = () => {
                       <p className="duration">Duration: 2:20:36 | Enroll: 56</p>
                     </div>
                     <div className="course-play-btn">
-                      <Link className="btn" href="#">
+                      <Link className="btn" href="become-an-instructor/step-3">
                         <svg
                           width="24"
                           height="24"

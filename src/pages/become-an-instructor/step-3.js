@@ -156,7 +156,7 @@ const Step3 = () => {
                   <div className="col-lg-8">
                     <Form action="" className="row">
                       <div className="col-12 mb-3">
-                        <label for="" className="form-label">
+                        <label htmlFor="" className="form-label">
                           Lesson Title
                         </label>
                         <input
@@ -164,11 +164,11 @@ const Step3 = () => {
                           type="text"
                           name=""
                           id=""
-                          value="Introduction to UI/UX Design Part-1.Mp4"
+                          defaultValue="Introduction to UI/UX Design Part-1.Mp4"
                         />
                       </div>
                       <div className="col-12 mb-3">
-                        <label for="" className="form-label">
+                        <label htmlFor="" className="form-label">
                           Course Description
                         </label>
                         <textarea

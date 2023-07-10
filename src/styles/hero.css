@@ -10723,13 +10723,14 @@
 @media (min-width: 320px) and (max-width: 650px) {
   .hero {
     margin-bottom: 0;
+    padding-top: 40px;
   }
   .hero .banner svg {
     height: 430px;
   }
   .hero .hero-title {
     width: calc(100% - 26px);
-    top: 15%;
+    top: 22%;
   }
   .hero h2 {
     font-size: 20px;

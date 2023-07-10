@@ -51,16 +51,16 @@ const PopularCourses = () => {
 
               <div className="shorting">
                 <div className="row">
-                  <div className="col-lg-6 col-md-12 text-end">
+                  <div className="col-lg-12 col-md-12 text-end">
                     <Link
                       href="#"
-                      className="btn border border-success-subtle text-success shorting-btn"
+                      className="btn border border-success-subtle text-success shorting-btn mb-lg-5"
                     >
                       Explore All
                     </Link>
                   </div>
-                  <div
-                    className={`col-lg-4 col-md-6 mix  ${
+
+                  <div className={`col-lg-4 col-md-6 mix  ${
                       keys === "all" && "d-block"
                     }  ${keys === "design" && "d-block"}`}
                   >

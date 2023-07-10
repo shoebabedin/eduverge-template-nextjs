@@ -387,8 +387,16 @@
 @media (min-width: 1024px) and (max-width: 1400px) {
 }
 @media (min-width: 649px) and (max-width: 991px) {
+  .course-categories {
+    padding: 46px 0 17px;
+    margin-bottom: 46px;
+  }
 }
 @media (min-width: 320px) and (max-width: 649px) {
+  .course-categories {
+    padding: 46px 0 17px;
+    margin-bottom: 46px;
+  }
   .course-categories .heading {
     font-size: 24px !important;
     line-height: 32px !important;

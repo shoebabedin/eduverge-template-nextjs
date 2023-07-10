@@ -48,7 +48,7 @@ const Forget = () => {
                       className="form-control"
                       id="email"
                       placeholder="name@email.com"
-                      value={forgotEmail}
+                      defaultValue={forgotEmail}
                       onChange={(e) => setForgotEmail(e.target.value)}
                     />
                   </div>

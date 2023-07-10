@@ -120,7 +120,7 @@ const BecomeAnInstructor = () => {
                     <hr />
                     <div className="row">
                       <div className="col-12 mb-3">
-                        <label for="exampleInputEmail1" className="form-label">
+                        <label htmlFor="exampleInputEmail1" className="form-label">
                           Course Title
                         </label>
                         <input
@@ -133,7 +133,7 @@ const BecomeAnInstructor = () => {
                       </div>
                       <div className="col-lg-6 mb-3">
                         <label
-                          for="exampleFormControlTextarea1"
+                          htmlFor="exampleFormControlTextarea1"
                           className="form-label"
                         >
                           Course Description
@@ -152,7 +152,7 @@ const BecomeAnInstructor = () => {
                       </div>
                       <div className="col-lg-6 mb-3">
                         <label
-                          for="exampleFormControlTextarea1"
+                          htmlFor="exampleFormControlTextarea1"
                           className="form-label"
                         >
                           Course Feature
@@ -179,35 +179,35 @@ const BecomeAnInstructor = () => {
                     <hr />
                     <div className="row">
                       <div className="col-lg-6 mb-3">
-                        <label for="exampleInputEmail1" className="form-label">
+                        <label htmlFor="exampleInputEmail1" className="form-label">
                           Course Category
                         </label>
                         <select name="" id="" className="form-select">
-                          <option value="" selected>
+                          <option defaultValue="" selected>
                             Select Category
                           </option>
-                          <option value="">Category 1</option>
-                          <option value="">Category 2</option>
+                          <option defaultValue="">Category 1</option>
+                          <option defaultValue="">Category 2</option>
                         </select>
                       </div>
                       <div className="col-lg-6 mb-3">
                         <label
-                          for="exampleFormControlTextarea1"
+                          htmlFor="exampleFormControlTextarea1"
                           className="form-label"
                         >
                           Course Sub Category
                         </label>
                         <select name="" id="" className="form-select">
-                          <option value="" selected>
+                          <option defaultValue="" selected>
                             Select Sub Category
                           </option>
-                          <option value="">Category 1</option>
-                          <option value="">Category 2</option>
+                          <option defaultValue="">Category 1</option>
+                          <option defaultValue="">Category 2</option>
                         </select>
                       </div>
                       <div className="col-lg-12 mb-3">
                         <label
-                          for="exampleFormControlTextarea1"
+                          htmlFor="exampleFormControlTextarea1"
                           className="form-label"
                         >
                           Tags
@@ -216,7 +216,7 @@ const BecomeAnInstructor = () => {
                           className="form-select"
                           closeMenuOnSelect={false}
                           components={animatedComponents}
-                          defaultValue={[optionList[0], optionList[1]]}
+                          defaultdefaultValue={[optionList[0], optionList[1]]}
                           isMulti
                           options={optionList}
                         />
@@ -230,19 +230,19 @@ const BecomeAnInstructor = () => {
                     <hr />
                     <div className="row">
                       <div className="col-lg-4 mb-3">
-                        <label for="exampleInputEmail1" className="form-label">
+                        <label htmlFor="exampleInputEmail1" className="form-label">
                           Price Currency
                         </label>
                         <select name="" id="" className="form-select">
-                          <option value="" selected>
+                          <option defaultValue="" selected>
                             Select Currency
                           </option>
-                          <option value="">Currency 1</option>
-                          <option value="">Currency 2</option>
+                          <option defaultValue="">Currency 1</option>
+                          <option defaultValue="">Currency 2</option>
                         </select>
                       </div>
                       <div className="col-lg-4 mb-3">
-                        <label for="exampleInputEmail1" className="form-label">
+                        <label htmlFor="exampleInputEmail1" className="form-label">
                           Course Price
                         </label>
                         <input
@@ -255,47 +255,47 @@ const BecomeAnInstructor = () => {
                       </div>
                       <div className="col-lg-4 mb-3">
                         <label
-                          for="exampleFormControlTextarea1"
+                          htmlFor="exampleFormControlTextarea1"
                           className="form-label"
                         >
                           Language
                         </label>
                         <select name="" id="" className="form-select">
-                          <option value="" selected>
+                          <option defaultValue="" selected>
                             Select Language
                           </option>
-                          <option value="">Language 1</option>
-                          <option value="">Language 2</option>
+                          <option defaultValue="">Language 1</option>
+                          <option defaultValue="">Language 2</option>
                         </select>
                       </div>
                       <div className="col-lg-6 mb-3">
                         <label
-                          for="exampleFormControlTextarea1"
+                          htmlFor="exampleFormControlTextarea1"
                           className="form-label"
                         >
                           Difficulty Level
                         </label>
                         <select name="" id="" className="form-select">
-                          <option value="" selected>
+                          <option defaultValue="" selected>
                             Beginner
                           </option>
-                          <option value="">Beginner 1</option>
-                          <option value="">Beginner 2</option>
+                          <option defaultValue="">Beginner 1</option>
+                          <option defaultValue="">Beginner 2</option>
                         </select>
                       </div>
                       <div className="col-lg-6 mb-3">
                         <label
-                          for="exampleFormControlTextarea1"
+                          htmlFor="exampleFormControlTextarea1"
                           className="form-label"
                         >
                           Learners Accessibility
                         </label>
                         <select name="" id="" className="form-select">
-                          <option value="" selected>
+                          <option defaultValue="" selected>
                             Public
                           </option>
-                          <option value="">Public 1</option>
-                          <option value="">Public 2</option>
+                          <option defaultValue="">Public 1</option>
+                          <option defaultValue="">Public 2</option>
                         </select>
                       </div>
                     </div>

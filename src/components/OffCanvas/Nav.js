@@ -9,7 +9,11 @@ const Nav = () => {
     const token = JSON.stringify({ email: "user@gmail.com" , name: 'user'});
     localStorage.setItem('token', token);
     window.location.reload()
+
+   
   };
+
+
   
 
   

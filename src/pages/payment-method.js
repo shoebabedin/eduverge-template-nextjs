@@ -36,11 +36,11 @@ const Checkout = () => {
                               name="btnradio"
                               id="btnradio1"
                               autocomplete="off"
-                              value="Regular"
+                              defaultValue="Regular"
                               checked={topping === "Regular"}
         onChange={onOptionChange}
                             />
-                            <label className="btn" for="btnradio1">
+                            <label className="btn" htmlFor="btnradio1">
                               <Image
                                 src="/assets/images/payment/master-card.png"
                                 alt=""
@@ -67,11 +67,11 @@ const Checkout = () => {
                               name="btnradio"
                               id="btnradio2"
                               autocomplete="off"
-                              value="Medium"
+                              defaultValue="Medium"
                               checked={topping === "Medium"}
         onChange={onOptionChange}
                             />
-                            <label className="btn" for="btnradio2">
+                            <label className="btn" htmlFor="btnradio2">
                               <Image
                                 src="/assets/images/payment/visa.png"
                                 alt=""
@@ -97,11 +97,11 @@ const Checkout = () => {
                               name="btnradio"
                               id="btnradio3"
                               autocomplete="off"
-                              value="Large"
+                              defaultValue="Large"
                               checked={topping === "Large"}
         onChange={onOptionChange}
                             />
-                            <label className="btn" for="btnradio3">
+                            <label className="btn" htmlFor="btnradio3">
                               <Image
                                 src="/assets/images/payment/american-express.png"
                                 alt=""
@@ -140,7 +140,7 @@ const Checkout = () => {
                             </div>
                             <div className="col-md-12">
                               <label
-                                for="inputPassword4"
+                                htmlFor="inputPassword4"
                                 className="form-label"
                               >
                                 Card Holder Name
@@ -154,7 +154,7 @@ const Checkout = () => {
                             </div>
                             <div className="col-md-6">
                               <label
-                                for="custom-input-date"
+                                htmlFor="custom-input-date"
                                 className="form-label"
                               >
                                 Expiration Date
@@ -167,7 +167,7 @@ const Checkout = () => {
                               />
                             </div>
                             <div className="col-md-6">
-                              <label for="password" className="form-label">
+                              <label htmlFor="password" className="form-label">
                                 CVC / CVV
                               </label>
                               <div className="password-filed">
@@ -204,7 +204,7 @@ const Checkout = () => {
                                 />
                                 <label
                                   className="form-check-label"
-                                  for="gridCheck"
+                                  htmlFor="gridCheck"
                                 >
                                   Save my payments details for future purchases
                                 </label>

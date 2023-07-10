@@ -166,6 +166,10 @@
 
 /* offcanvas */
 
+.search-bar-mob {
+  display: none;
+}
+
 /* after login navbar */
 #top_navbar .my-courses a,
 #top_navbar .my-courses button {
@@ -203,6 +207,9 @@
   font-size: 14px;
   line-height: 24px;
   color: #101840;
+}
+#top_navbar .toggle_search {
+  display: none;
 }
 
 /* after login navbar */
@@ -261,6 +268,45 @@
 }
 
 /* cart dropdown */
+
+/* notification_dropdown */
+.notification_dropdown {
+  box-shadow: 0px 24px 48px 0px rgba(145, 158, 171, 0.16);
+  padding: 0 !important;
+}
+.notification_dropdown .title {
+  padding: 16px 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.024px;
+  border-bottom: 1px solid #919eab3d;
+}
+.notification_dropdown .new_notification {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.notification_dropdown .notification_dropdown_content {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px 12px;
+  cursor: pointer;
+}
+.notification_dropdown .notification_dropdown_content:hover {
+  background: var(--primary-primary-50, #e9f4fe);
+}
+
+.notification_dropdown .notification_dropdown_content_scroll {
+  max-height: 341px;
+  overflow-y: auto;
+}
+.notification_dropdown
+  .notification_dropdown_content_scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* notification_dropdown */
 
 /* responsive */
 @media (min-width: 1358px) and (max-width: 1440px) {
@@ -343,6 +389,9 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .search-bar-mob {
+    display: block;
+  }
   #top_navbar .toggle_search {
     display: flex;
     align-items: center;

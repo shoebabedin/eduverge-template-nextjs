@@ -33,9 +33,9 @@ const withdraw = () => {
                     aria-label="Floating label select example"
                   >
                     <option selected>This Month</option>
-                    <option value="1">January</option>
-                    <option value="2">February</option>
-                    <option value="3">March</option>
+                    <option defaultValue="1">January</option>
+                    <option defaultValue="2">February</option>
+                    <option defaultValue="3">March</option>
                   </select>
                 </div>
               </div>

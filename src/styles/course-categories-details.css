@@ -636,6 +636,10 @@
 @media (min-width: 990px) and (max-width: 1023px) {
 }
 @media screen and (max-width: 991px) {
+  .course-categories{
+    padding: 46px 0 17px;
+    margin-bottom: 46px;
+  }
   #sidebar {
     padding: 24px 0;
   }

@@ -59,12 +59,12 @@ const ChangePassword = () => {
           <hr />
           <form className="row">
             <div className="col-12 mb-3">
-              <label for="firstName" className="form-label">
+              <label htmlFor="firstName" className="form-label">
                 Current Password
               </label>
               <div className="position-relative">
                 <input
-                  value="password"
+                  defaultValue="password"
                   type="password"
                   id="firstName"
                   className="form-control"
@@ -88,12 +88,12 @@ const ChangePassword = () => {
               </div>
             </div>
             <div className="col-12 mb-3">
-              <label for="psw" className="form-label">
+              <label htmlFor="psw" className="form-label">
                 New Password
               </label>
               <div className="position-relative">
                 <input
-                  value="By$lglobal"
+                  defaultValue="By$lglobal"
                   type="password"
                   id="psw"
                   className="form-control"
@@ -128,12 +128,12 @@ const ChangePassword = () => {
               </div>
             </div>
             <div className="col-12 mb-3">
-              <label for="firstName" className="form-label">
+              <label htmlFor="firstName" className="form-label">
                 Confirm New Password
               </label>
               <div className="position-relative">
                 <input
-                  value="password"
+                  defaultValue="password"
                   type="password"
                   id="firstName"
                   className="form-control"

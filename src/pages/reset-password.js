@@ -12,7 +12,7 @@ const ResetPassword = () => {
                 </p>
                 <form action="#">
                   <div className="mb-3">
-                    <label for="newpass" className="form-label">
+                    <label htmlFor="newpass" className="form-label">
                       Password
                       <span>(Between 8 and 25 characters)</span>
                     </label>
@@ -24,7 +24,7 @@ const ResetPassword = () => {
                     />
                   </div>
                   <div className="mb-3">
-                    <label for="confirmpass" className="form-label">
+                    <label htmlFor="confirmpass" className="form-label">
                       Confirm New Password
                     </label>
                     <input

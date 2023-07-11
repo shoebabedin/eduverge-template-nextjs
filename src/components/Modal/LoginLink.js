@@ -44,7 +44,7 @@ const LoginLink = () => {
                 <div className="mb-3 text-center forget-pass">
                   <p data-bs-toggle="modal" data-bs-target="#forgetpass">
                     <Link
-                      href=""
+                      href="#"
                       className="d-flex align-items-center justify-content-center gap-1"
                       role="button"
                       data-bs-toggle="modal"

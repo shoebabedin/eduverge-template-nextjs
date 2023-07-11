@@ -1,4 +1,4 @@
-import { Plus } from "@phosphor-icons/react";
+// import { Plus } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -505,7 +505,7 @@ const Step2 = () => {
                 href={"/become-an-instructor/step-1"}
                 className="text-success d-flex align-items-center justify-content-start gap-1"
               >
-                <Plus size={20} color="#429777" weight="bold" />
+                {/* <Plus size={20} color="#429777" weight="bold" /> */}
                 Add More Section
               </Link>
             </div>

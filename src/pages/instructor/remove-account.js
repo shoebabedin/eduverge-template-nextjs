@@ -27,7 +27,7 @@ const RemoveAccount = () => {
           <hr />
           <div className="payment-method-items">
             <div className="card-icon-number">
-              {/* <p className="card-number">{user?.name}</p> */}
+              <p className="card-number">{user?.name}</p>
             </div>
 
             <button

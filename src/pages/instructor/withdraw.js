@@ -270,7 +270,7 @@ const withdraw = () => {
                     <nav aria-label="Page navigation example">
                       <ul className="pagination justify-content-end">
                         <li className="page-item disabled">
-                          <Link className="page-link">
+                          <Link className="page-link" href={"#"}>
                             <svg
                               width="6"
                               height="10"
@@ -399,7 +399,7 @@ const withdraw = () => {
                     <nav aria-label="Page navigation example">
                       <ul className="pagination justify-content-end">
                         <li className="page-item disabled">
-                          <Link className="page-link">
+                          <Link className="page-link" href={"#"}>
                             <svg
                               width="6"
                               height="10"

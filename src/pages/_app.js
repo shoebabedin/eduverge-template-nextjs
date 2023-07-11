@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }) {
     require("bootstrap/dist/js/bootstrap.bundle");
   }, []);
   return (
+    
     <Layout>
       <Component {...pageProps} />
     </Layout>

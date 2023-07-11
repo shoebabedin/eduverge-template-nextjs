@@ -6,7 +6,7 @@ const LarnerHeader = ({data}) => {
   const router = useRouter();
   const pathname = router.pathname.split("/");
 
-  
+  console.log(pathname);
   return (
     <>
       <section className="course-categories">

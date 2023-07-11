@@ -15,7 +15,9 @@ import dynamic from 'next/dynamic';
 
 const BoardDynamic = dynamic(() => import('./../components/Home/PopularCourses'), {
   ssr: false,
-})
+});
+
+
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
